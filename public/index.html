@@ -73,7 +73,7 @@
         ramCount = parseInt(ramCount);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "calcScore"};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
-            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
     $("#upgradeCPU").click(function () {
@@ -91,7 +91,7 @@
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeCPU", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
-            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
     $("#upgradeGPU").click(function () {
@@ -109,7 +109,7 @@
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeGPU", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
-            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
     $("#upgradeOptimal").click(function () {
@@ -127,7 +127,7 @@
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeOptimal", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
-            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
 </script>
