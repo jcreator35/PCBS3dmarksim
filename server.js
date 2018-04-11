@@ -115,7 +115,7 @@ app.post('/calcTools', function (req, res) {
         error = true;
         res.status(200).json({"Error":"Wrong RAM ID"});
     }
-    else if(req.body.ramSticks === undefined || !isInt(req.body.ramSticks) || parseInt(req.body.ramSticks)>4){
+    else if(req.body.ramSticks === undefined || !isInt(req.body.ramSticks) || parseInt(req.body.ramSticks)>8){
         error = true;
         res.status(200).json({"Error":"Wrong amount of ram sticks"});
     }
@@ -133,6 +133,7 @@ app.post('/calcTools', function (req, res) {
             let gpu = db.GPU[parseInt(req.body.gpu)-1];
             let ram = db.RAM[parseInt(req.body.ram)-1];
             let sticks = parseInt(req.body.ramSticks);
+			if (mb.FullName.indexOf("X399")===-1 && sticks>4) sticks = 4;
             if(method === "calcScore"){
                 let score = calcScore(cpu, gpu, mb, ram.freq, sticks);
                 res.json(score);
