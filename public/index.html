@@ -26,28 +26,28 @@
 <div id="response"></div>
 </body>
 <script>
-    $.get("http://localhost:8080/getCPUList", function( data ) {
+    $.get("https://pcbs.herokuapp.com/getCPUList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
             option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
         }
         $('#cpu').append(option);
     });
-    $.get("http://localhost:8080/getGPUList", function( data ) {
+    $.get("https://pcbs.herokuapp.com/getGPUList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
             option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
         }
         $('#gpu').append(option);
     });
-    $.get("http://localhost:8080/getMBList", function( data ) {
+    $.get("https://pcbs.herokuapp.com/getMBList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
             option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
         }
         $('#mb').append(option);
     });
-    $.get("http://localhost:8080/getRAMList", function( data ) {
+    $.get("https://pcbs.herokuapp.com/getRAMList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
             option += '<option value="'+ data[i].id + '">' + data[i].Name + " " + data[i].Frequency + '</option>';
@@ -71,7 +71,7 @@
         let ramCount = $('#ramSticks option:selected').attr('value');
         ramCount = parseInt(ramCount);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "calcScore"};
-        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+        $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
         });
     });
@@ -89,7 +89,7 @@
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeCPU", "targetScore": targetScore};
-        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+        $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
         });
     });
@@ -107,7 +107,7 @@
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeGPU", "targetScore": targetScore};
-        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+        $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
         });
     });
@@ -125,7 +125,7 @@
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
         let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeOptimal", "targetScore": targetScore};
-        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+        $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
         });
     });
