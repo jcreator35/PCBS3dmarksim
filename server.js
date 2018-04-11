@@ -97,37 +97,37 @@ app.post('/calcTools', function (req, res) {
     //Validating Data
     if(req.body.method === undefined || methods.indexOf(req.body.method) === -1){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong method"});
+        res.status(200).json({"Error":"Wrong method"});
     }
     else if(req.body.cpu === undefined || !isInt(req.body.cpu) || parseInt(req.body.cpu)<1 || db.CPU.length < parseInt(req.body.cpu)){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong CPU ID"});
+        res.status(200).json({"Error":"Wrong CPU ID"});
     }
     else if(req.body.gpu === undefined || !isInt(req.body.gpu) || parseInt(req.body.gpu)<1 || db.GPU.length < parseInt(req.body.gpu)){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong GPU ID"});
+        res.status(200).json({"Error":"Wrong GPU ID"});
     }
     else if(req.body.mb === undefined || !isInt(req.body.mb) || parseInt(req.body.mb)<1 || db.MotherBoard.length < parseInt(req.body.mb)){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong Motherboard ID"});
+        res.status(200).json({"Error":"Wrong Motherboard ID"});
     }
     else if(req.body.ram === undefined || !isInt(req.body.ram) || parseInt(req.body.ram)<1 || db.RAM.length < parseInt(req.body.ram)){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong RAM ID"});
+        res.status(200).json({"Error":"Wrong RAM ID"});
     }
     else if(req.body.ramSticks === undefined || !isInt(req.body.ramSticks) || parseInt(req.body.ramSticks)>4){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong amount of ram sticks"});
+        res.status(200).json({"Error":"Wrong amount of ram sticks"});
     }
     else if(req.body.method !== "calcScore" && (req.body.targetScore === undefined || !isInt(req.body.targetScore) || parseInt(req.body.targetScore)<0)){
         error = true;
-        res.status(200).json({"errorMsg":"Wrong target score"});
+        res.status(200).json({"Error":"Wrong target score"});
     }
     if(!error){
         let cpu = db.CPU[parseInt(req.body.cpu)-1];
         let mb = db.MotherBoard[parseInt(req.body.mb)-1];
         if (cpu.socket !== mb.socket) {
-            res.status(200).json({"errorMsg":"You selected CPU and MB with different sockets"});
+            res.status(200).json({"Error":"You selected CPU and MB with different sockets"});
         }else{
             let method = req.body.method;
             let gpu = db.GPU[parseInt(req.body.gpu)-1];
@@ -144,7 +144,7 @@ app.post('/calcTools', function (req, res) {
                 let beginScore = calcScore(db.CPU[startingPoint], gpu, mb, ram.freq, sticks)["Total score"];
 
                 if(beginScore >= targetScore){
-                    res.status(200).json({"errorMsg":"Your PC already have needed score"});
+                    res.status(200).json({"Error":"Your PC already have needed score"});
                 }else{
                     startingPoint++;
                     while( beginScore<targetScore && startingPoint<db.CPU.length) {
@@ -155,7 +155,7 @@ app.post('/calcTools', function (req, res) {
                     if (startingPoint < db.CPU.length){
                         priceToUpgrade = db.CPU[startingPoint].price - cpu.price;
                         res.json({"CPU":db.CPU[startingPoint].FullName, "upgradePrice": priceToUpgrade, "Score": beginScore});
-                    }else res.status(200).json({"errorMsg":"Can't meet required score by upgrading only CPU. Try adding more RAM sticks", "Max Score": beginScore});
+                    }else res.status(200).json({"Error":"Can't meet required score by upgrading only CPU. Try adding more RAM sticks", "Max Score": beginScore});
                 }
             }
             else if(method === "upgradeGPU"){
@@ -164,7 +164,7 @@ app.post('/calcTools', function (req, res) {
                 let targetScore = parseInt(req.body.targetScore);
                 let beginScore = calcScore(cpu, db.GPU[startingPoint], mb, ram.freq, sticks)["Total score"];
                 if(beginScore >= targetScore){
-                    res.status(200).json({"errorMsg":"Your PC already have needed score"});
+                    res.status(200).json({"Error":"Your PC already have needed score"});
                 }else{
                     startingPoint++;
                     while( beginScore < targetScore && startingPoint<db.GPU.length) {
@@ -174,7 +174,7 @@ app.post('/calcTools', function (req, res) {
                     if (startingPoint < db.GPU.length){
                         priceToUpgrade = db.GPU[startingPoint].price - gpu.price;
                         res.json({"GPU":db.GPU[startingPoint].FullName, "upgradePrice": priceToUpgrade, "Score": beginScore});
-                    }else res.status(200).json({"errorMsg":"Can't meet required score by upgrading only GPU", "Max Score": beginScore});
+                    }else res.status(200).json({"Error":"Can't meet required score by upgrading only GPU", "Max Score": beginScore});
                 }
             }
             else if(method === "upgradeOptimal"){
@@ -198,7 +198,7 @@ app.post('/calcTools', function (req, res) {
 					cheapestBuild["Usefull RAM Freq"] = undefined;
 					let obj = {"Starting Build": currBuild, "Result Build": cheapestBuild, "Price difference": cheapestBuild.Price - currBuidPrice};
 					res.json(obj);
-				}else res.status(200).json({"errorMsg":"Can't score that high"});
+				}else res.status(200).json({"Error":"Can't score that high"});
             }
         }
     }
