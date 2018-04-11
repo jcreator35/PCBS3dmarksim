@@ -1,0 +1,17 @@
+{
+  "name": "pcsim3dmark",
+  "version": "1.0.0",
+  "description": "Tool for 3dMark from PC Building Simulator game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "latest",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "npm": "^5.8.0"
+  }
+}

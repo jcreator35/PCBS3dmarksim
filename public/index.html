@@ -1,0 +1,132 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{
+        width: 50%;
+        margin: auto;
+    }
+</style>
+<body>
+<h2>CPU</h2>
+<select id="cpu" class="btn-block"></select>
+<h2>GPU</h2>
+<select id="gpu" class="btn-block"></select>
+<h2>MB</h2>
+<select id="mb" class="btn-block"></select>
+<h2>RAM</h2>
+<select id="ram" class="btn-block"></select>
+<h2>RAM sticks count</h2>
+<select id="ramSticks" class="btn-block"></select>
+<h2>Target score:</h2>
+<input type="text" placeholder="Target score" class="btn-block" id="targetScore">
+<button type="button" id="calcScore" class="btn btn-primary btn-block">Calculate build score</button>
+<button type="button" id="upgradeCPU" class="btn btn-primary btn-block">Upgrade CPU</button>
+<button type="button" id="upgradeGPU" class="btn btn-primary btn-block">Upgrade GPU</button>
+<button type="button" id="upgradeOptimal" class="btn btn-primary btn-block">Optimal upgrade</button>
+<div id="response"></div>
+</body>
+<script>
+    $.get("http://localhost:8080/getCPUList", function( data ) {
+        let option = '';
+        for (let i=0;i<data.length;i++){
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
+        }
+        $('#cpu').append(option);
+    });
+    $.get("http://localhost:8080/getGPUList", function( data ) {
+        let option = '';
+        for (let i=0;i<data.length;i++){
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
+        }
+        $('#gpu').append(option);
+    });
+    $.get("http://localhost:8080/getMBList", function( data ) {
+        let option = '';
+        for (let i=0;i<data.length;i++){
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
+        }
+        $('#mb').append(option);
+    });
+    $.get("http://localhost:8080/getRAMList", function( data ) {
+        let option = '';
+        for (let i=0;i<data.length;i++){
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + " " + data[i].Frequency + '</option>';
+        }
+        $('#ram').append(option);
+        option = '';
+        for (let i=1;i<5;i++){
+            option += '<option value="'+ i + '">' + i + '</option>';
+        }
+        $('#ramSticks').append(option);
+    });
+    $("#calcScore").click(function () {
+        let cpuID = $('#cpu option:selected').attr('value');
+        cpuID = parseInt(cpuID);
+        let gpuID = $('#gpu option:selected').attr('value');
+        gpuID = parseInt(gpuID);
+        let mbID = $('#mb option:selected').attr('value');
+        mbID = parseInt(mbID);
+        let ramID = $('#ram option:selected').attr('value');
+        ramID = parseInt(ramID);
+        let ramCount = $('#ramSticks option:selected').attr('value');
+        ramCount = parseInt(ramCount);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "calcScore"};
+        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+        });
+    });
+    $("#upgradeCPU").click(function () {
+        let cpuID = $('#cpu option:selected').attr('value');
+        cpuID = parseInt(cpuID);
+        let gpuID = $('#gpu option:selected').attr('value');
+        gpuID = parseInt(gpuID);
+        let mbID = $('#mb option:selected').attr('value');
+        mbID = parseInt(mbID);
+        let ramID = $('#ram option:selected').attr('value');
+        ramID = parseInt(ramID);
+        let ramCount = $('#ramSticks option:selected').attr('value');
+        ramCount = parseInt(ramCount);
+        let targetScore = $('#targetScore').val();
+        targetScore = parseInt(targetScore);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeCPU", "targetScore": targetScore};
+        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+        });
+    });
+    $("#upgradeGPU").click(function () {
+        let cpuID = $('#cpu option:selected').attr('value');
+        cpuID = parseInt(cpuID);
+        let gpuID = $('#gpu option:selected').attr('value');
+        gpuID = parseInt(gpuID);
+        let mbID = $('#mb option:selected').attr('value');
+        mbID = parseInt(mbID);
+        let ramID = $('#ram option:selected').attr('value');
+        ramID = parseInt(ramID);
+        let ramCount = $('#ramSticks option:selected').attr('value');
+        ramCount = parseInt(ramCount);
+        let targetScore = $('#targetScore').val();
+        targetScore = parseInt(targetScore);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeGPU", "targetScore": targetScore};
+        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+        });
+    });
+    $("#upgradeOptimal").click(function () {
+        let cpuID = $('#cpu option:selected').attr('value');
+        cpuID = parseInt(cpuID);
+        let gpuID = $('#gpu option:selected').attr('value');
+        gpuID = parseInt(gpuID);
+        let mbID = $('#mb option:selected').attr('value');
+        mbID = parseInt(mbID);
+        let ramID = $('#ram option:selected').attr('value');
+        ramID = parseInt(ramID);
+        let ramCount = $('#ramSticks option:selected').attr('value');
+        ramCount = parseInt(ramCount);
+        let targetScore = $('#targetScore').val();
+        targetScore = parseInt(targetScore);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeOptimal", "targetScore": targetScore};
+        $.post( "http://localhost:8080/calcTools", obj, function( data ) {
+            $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>'));
+        });
+    });
+</script>
