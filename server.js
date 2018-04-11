@@ -179,23 +179,26 @@ app.post('/calcTools', function (req, res) {
             }
             else if(method === "upgradeOptimal"){
                 let targetScore = parseInt(req.body.targetScore);
-                let cheapestBuild = JSON.parse(JSON.stringify(ScoreDB.find(x => x.Score >= targetScore)));
-                let cheapestRAM = db.RAM.find(x => x.freq === cheapestBuild["Usefull RAM Freq"].toString());
-                let currBuidPrice = parseInt(cpu.price) + parseInt(gpu.price) + parseInt(mb.price) + parseInt(ram.price)*sticks;
-                let currBuild = {
-                    "CPU": cpu.FullName,
-                    "MB": mb.FullName,
-                    "RAM": ram.FullName,
-                    "RAM Sticks": sticks,
-                    "Score": calcScore(cpu, gpu, mb, ram.freq, sticks)["Total score"],
-                    "Price": currBuidPrice,
-                    "GPU": gpu.FullName
-                };
-                cheapestBuild["RAM"] = cheapestRAM.FullName;
-                cheapestBuild["RAM Freq"] = undefined;
-                cheapestBuild["Usefull RAM Freq"] = undefined;
-                let obj = {"Starting Build": currBuild, "Result Build": cheapestBuild, "Price difference": cheapestBuild.Price - currBuidPrice};
-                res.json(obj);
+				let findBuild = ScoreDB.find(x => x.Score >= targetScore);
+				if (findBuild !== undefined){
+					let cheapestBuild = JSON.parse(JSON.stringify(findBuild));
+					let cheapestRAM = db.RAM.find(x => x.freq === cheapestBuild["Usefull RAM Freq"].toString());
+					let currBuidPrice = parseInt(cpu.price) + parseInt(gpu.price) + parseInt(mb.price) + parseInt(ram.price)*sticks;
+					let currBuild = {
+						"CPU": cpu.FullName,
+						"MB": mb.FullName,
+						"RAM": ram.FullName,
+						"RAM Sticks": sticks,
+						"Score": calcScore(cpu, gpu, mb, ram.freq, sticks)["Total score"],
+						"Price": currBuidPrice,
+						"GPU": gpu.FullName
+					};
+					cheapestBuild["RAM"] = cheapestRAM.FullName;
+					cheapestBuild["RAM Freq"] = undefined;
+					cheapestBuild["Usefull RAM Freq"] = undefined;
+					let obj = {"Starting Build": currBuild, "Result Build": cheapestBuild, "Price difference": cheapestBuild.Price - currBuidPrice};
+					res.json(obj);
+				}else res.status(200).json({"errorMsg":"Can't score that high"});
             }
         }
     }
