@@ -258,7 +258,7 @@ app.post('/calcTools', function (req, res) {
 //             let obj = JSON.parse(JSON.stringify(cpu));
 //             obj.Price += gpu.Price;
 //             obj["GPU"] = gpu.Name;
-//             obj.Score = Math.trunc(1.0 / (0.85 / cpu.Score + 0.15 / gpu.Score));
+//             obj.Score = Math.trunc(1.0 / (0.15 / cpu.Score + 0.85 / gpu.Score));
 //             resultDB.push(obj);
 //         });
 //     });
