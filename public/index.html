@@ -130,4 +130,20 @@
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
+	$( "#mb" ).change(function() {
+	  let selectedMB = $( "#mb option:selected" ).text();
+	  if(selectedMB.indexOf("X399")===-1){
+		option = '';
+        for (let i=1;i<5;i++){
+            option += '<option value="'+ i + '">' + i + '</option>';
+        }
+        $('#ramSticks').html(option);
+	  }else{
+		option = '';
+        for (let i=1;i<9;i++){
+            option += '<option value="'+ i + '">' + i + '</option>';
+        }
+        $('#ramSticks').append(option);
+	  }
+	});
 </script>
