@@ -30,7 +30,7 @@
     $.get("https://pcbs.herokuapp.com/getCPUList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
-            option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + " ( " + data[i].Socket + ' )</option>';
         }
         $('#cpu').append(option);
     });
@@ -44,7 +44,7 @@
     $.get("https://pcbs.herokuapp.com/getMBList", function( data ) {
         let option = '';
         for (let i=0;i<data.length;i++){
-            option += '<option value="'+ data[i].id + '">' + data[i].Name + '</option>';
+            option += '<option value="'+ data[i].id + '">' + data[i].Name + " ( " + data[i].Socket + ' )</option>';
         }
         $('#mb').append(option);
     });

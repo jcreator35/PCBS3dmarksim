@@ -4,7 +4,6 @@ let cors = require('cors');
 let bodyParser = require('body-parser');
 let app = express();
 let path = require("path");
-//let fs = require("fs");
 let port = process.env.PORT || 8080;
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,7 +16,6 @@ app.get('/', function(req, res) {
 //Variables for database info
 let db = require("./data.json");
 const ScoreDB = require("./ScoreDB");
-//let levels = [0, 1200, 3000, 4800, 6600, 8400, 10500, 13000, 16000, 19500, 23500, 28000, 33000, 38000, 43000, 48000, 53000, 58000, 63000, 68000, 73000];
 let ramSpeeds = [2133, 2400, 2666, 2800, 3000, 3200, 3600, 3733, 4000];
 let methods = ["calcScore", "upgradeCPU", "upgradeGPU", "upgradeOptimal"];
 
@@ -47,15 +45,6 @@ function isInt(value) {
         parseInt(Number(value)) == value &&
         !isNaN(parseInt(value, 10));
 }
-// function calcProgression(level, percent) {
-//     if(level < levels.length && level > 0){
-//         let baseLevel = levels[level-1];
-//         let additional  = percent*(levels[level] - baseLevel)/100;
-//         return baseLevel + additional;
-//     }else {
-//         return 0;
-//     }
-// }
 
 //DB access functions
 app.get('/getCPUList', function (req, res) {
@@ -97,31 +86,31 @@ app.post('/calcTools', function (req, res) {
     //Validating Data
     if(req.body.method === undefined || methods.indexOf(req.body.method) === -1){
         error = true;
-        res.status(200).json({"Error":"Wrong method"});
+        res.status(200).json({"Error":" Wrong method"});
     }
     else if(req.body.cpu === undefined || !isInt(req.body.cpu) || parseInt(req.body.cpu)<1 || db.CPU.length < parseInt(req.body.cpu)){
         error = true;
-        res.status(200).json({"Error":"Wrong CPU ID"});
+        res.status(200).json({"Error":" Wrong CPU ID"});
     }
     else if(req.body.gpu === undefined || !isInt(req.body.gpu) || parseInt(req.body.gpu)<1 || db.GPU.length < parseInt(req.body.gpu)){
         error = true;
-        res.status(200).json({"Error":"Wrong GPU ID"});
+        res.status(200).json({"Error":" Wrong GPU ID"});
     }
     else if(req.body.mb === undefined || !isInt(req.body.mb) || parseInt(req.body.mb)<1 || db.MotherBoard.length < parseInt(req.body.mb)){
         error = true;
-        res.status(200).json({"Error":"Wrong Motherboard ID"});
+        res.status(200).json({"Error":" Wrong Motherboard ID"});
     }
     else if(req.body.ram === undefined || !isInt(req.body.ram) || parseInt(req.body.ram)<1 || db.RAM.length < parseInt(req.body.ram)){
         error = true;
-        res.status(200).json({"Error":"Wrong RAM ID"});
+        res.status(200).json({"Error":" Wrong RAM ID"});
     }
     else if(req.body.ramSticks === undefined || !isInt(req.body.ramSticks) || parseInt(req.body.ramSticks)>8){
         error = true;
-        res.status(200).json({"Error":"Wrong amount of ram sticks"});
+        res.status(200).json({"Error":" Wrong amount of ram sticks"});
     }
     else if(req.body.method !== "calcScore" && (req.body.targetScore === undefined || !isInt(req.body.targetScore) || parseInt(req.body.targetScore)<0)){
         error = true;
-        res.status(200).json({"Error":"Wrong target score"});
+        res.status(200).json({"Error":" Wrong target score"});
     }
     if(!error){
         let cpu = db.CPU[parseInt(req.body.cpu)-1];
@@ -204,71 +193,6 @@ app.post('/calcTools', function (req, res) {
         }
     }
 });
-// app.post('/calcProgression', function (req, res) {
-//     let level = parseInt(req.body.level);
-//     let percent = parseInt(req.body.percent);
-//     res.json({"result": calcProgression(level, percent)});
-// });
-
-// function preCalc3DMarkScore(){
-//     // let GPUScores = [];
-//     //     // db.GPU.forEach(function (gpu, i) {
-//     //     //     let GPUTestScore1 = parseFloat(gpu.test1memcl) * parseFloat(gpu.memClock) + parseFloat(gpu.test1corecl) * parseFloat(gpu.coreClock) + parseFloat(gpu.test1adj);
-//     //     //     let GPUTestScore2 = parseFloat(gpu.test2memcl) * parseFloat(gpu.memClock) + parseFloat(gpu.test2corecl) * parseFloat(gpu.coreClock) + parseFloat(gpu.test2adj);
-//     //     //     let GPUScore = Math.trunc(328.0 / (1.0 / GPUTestScore1 + 1.0 / GPUTestScore2));
-//     //     //     GPUScores[i] = {"Name": gpu.FullName, "Score": GPUScore, "Price": parseInt(gpu.price)};
-//     //     // });
-//     //     // fs.writeFile('./dataTest.json', JSON.stringify(GPUScores, null, 2));
-//     let combinations = [];
-//     ramSpeeds.forEach(function (el) {
-//         let totalPrice = 0;
-//         let cheapestRam = db.RAM.find(x => x.freq === el.toString());
-//         for(let sticks = 1; sticks<=4; sticks++) {
-//             db.CPU.forEach(function (cpu) {
-//                 totalPrice = parseInt(cheapestRam.price) * sticks;
-//                 totalPrice += parseInt(cpu.price);
-//                 let cheapestMobo = db.MotherBoard.find(x => x.socket === cpu.socket);
-//                 totalPrice += parseInt(cheapestMobo.price);
-//                 let minFreq = Math.min(parseFloat(cheapestRam.freq), parseFloat(cheapestMobo.maxMemSpeed));
-//                 let CPUTestScore = parseFloat(cpu.coefCoreClock) * parseFloat(cpu.freq) + parseFloat(cpu.coefMemChannel) * sticks + parseFloat(cpu.coefMemClock) * minFreq + parseFloat(cpu.adjustment);
-//                 let CPUScore = Math.trunc(298.0 * CPUTestScore);
-//                 combinations.push({
-//                     "CPU": cpu.FullName,
-//                     "MB": cheapestMobo.FullName,
-//                     "RAM Freq": parseInt(cheapestRam.freq),
-//                     "Usefull RAM Freq": parseInt(minFreq),
-//                     "RAM Sticks": sticks,
-//                     "Score": CPUScore,
-//                     "Price": totalPrice
-//                 });
-//             });
-//         }
-//     });
-//     combinations.sort(function (a,b) {
-//         return a["Price"] - b["Price"];
-//     });
-//     console.log(combinations.length);
-//     fs.writeFile('./dataTestCPU.json', JSON.stringify(combinations, null, 2));
-// }
-//
-// function createScoresDB(){
-//     let resultDB = [];
-//     GPUDB.forEach(function (gpu) {
-//         CPUDB.forEach(function (cpu) {
-//             let obj = JSON.parse(JSON.stringify(cpu));
-//             obj.Price += gpu.Price;
-//             obj["GPU"] = gpu.Name;
-//             obj.Score = Math.trunc(1.0 / (0.15 / cpu.Score + 0.85 / gpu.Score));
-//             resultDB.push(obj);
-//         });
-//     });
-//     resultDB.sort(function (a,b) {
-//         return a["Price"] - b["Price"];
-//     });
-//     console.log(resultDB.length);
-//     fs.writeFile('./ScoreDB.json', JSON.stringify(resultDB, null, 2));
-// }
-// //createScoresDB();
 
 app.listen(port);
 console.log('Server started on port ' + port);
