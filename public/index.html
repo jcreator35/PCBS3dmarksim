@@ -8,10 +8,15 @@
 </style>
 <body>
 <p>Source code: <a href="https://gitlab.com/andzav/PCBS3dmarksim">GitLab</a></p>
+<p>This is third-party app created for game: <a href="http://store.steampowered.com/app/621060/PC_Building_Simulator/">PC Building Simulator</a></p>
+<p class="text-danger">Scores calculated here may not be achieved in some cases due to overheating</p>
+<p>If motherboard don't suppport two selected GPU's, it automatically will consider only one</p>
 <h2>CPU</h2>
 <select id="cpu" class="btn-block"></select>
 <h2>GPU</h2>
 <select id="gpu" class="btn-block"></select>
+<h2>GPU count</h2>
+<select id="gpuCount" class="btn-block"><option value="1">1</option><option value="2">2</option></select>
 <h2>MB</h2>
 <select id="mb" class="btn-block"></select>
 <h2>RAM</h2>
@@ -71,7 +76,9 @@
         ramID = parseInt(ramID);
         let ramCount = $('#ramSticks option:selected').attr('value');
         ramCount = parseInt(ramCount);
-        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "calcScore"};
+        let gpuCount = $('#gpuCount option:selected').attr('value');
+        gpuCount = parseInt(gpuCount);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "gpuCount": gpuCount, "method": "calcScore"};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
@@ -89,7 +96,9 @@
         ramCount = parseInt(ramCount);
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
-        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeCPU", "targetScore": targetScore};
+        let gpuCount = $('#gpuCount option:selected').attr('value');
+        gpuCount = parseInt(gpuCount);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "gpuCount": gpuCount, "method": "upgradeCPU", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
@@ -107,7 +116,9 @@
         ramCount = parseInt(ramCount);
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
-        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeGPU", "targetScore": targetScore};
+        let gpuCount = $('#gpuCount option:selected').attr('value');
+        gpuCount = parseInt(gpuCount);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "gpuCount": gpuCount, "method": "upgradeGPU", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
@@ -125,25 +136,27 @@
         ramCount = parseInt(ramCount);
         let targetScore = $('#targetScore').val();
         targetScore = parseInt(targetScore);
-        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "method": "upgradeOptimal", "targetScore": targetScore};
+        let gpuCount = $('#gpuCount option:selected').attr('value');
+        gpuCount = parseInt(gpuCount);
+        let obj = {"cpu": cpuID, "gpu": gpuID, "mb": mbID, "ram": ramID, "ramSticks": ramCount, "gpuCount": gpuCount, "method": "upgradeOptimal", "targetScore": targetScore};
         $.post( "https://pcbs.herokuapp.com/calcTools", obj, function( data ) {
             $('#response').html(JSON.stringify(data).split('{').join('<br>').split('}').join('<br>').split(',').join('<br>').split('"').join(''));
         });
     });
-	$( "#mb" ).change(function() {
-	  let selectedMB = $( "#mb option:selected" ).text();
-	  if(selectedMB.indexOf("X399")===-1){
-		option = '';
-        for (let i=1;i<5;i++){
-            option += '<option value="'+ i + '">' + i + '</option>';
+    $( "#mb" ).change(function() {
+        let selectedMB = $( "#mb option:selected" ).text();
+        if(selectedMB.indexOf("X399")===-1){
+            option = '';
+            for (let i=1;i<5;i++){
+                option += '<option value="'+ i + '">' + i + '</option>';
+            }
+            $('#ramSticks').html(option);
+        }else{
+            option = '';
+            for (let i=1;i<9;i++){
+                option += '<option value="'+ i + '">' + i + '</option>';
+            }
+            $('#ramSticks').html(option);
         }
-        $('#ramSticks').html(option);
-	  }else{
-		option = '';
-        for (let i=1;i<9;i++){
-            option += '<option value="'+ i + '">' + i + '</option>';
-        }
-        $('#ramSticks').html(option);
-	  }
-	});
+    });
 </script>
