@@ -1,6 +1,6 @@
 [
   {
-    "name": "Mortoni Value Supreme 2 GB",
+    "name": "Mortoni Value Supreme 2 GB",
     "ramType": "DDR4",
     "freq": "2133",
     "quality": "2",
@@ -9,7 +9,7 @@
     "sellPrice": "7"
   },
   {
-    "name": "Shean TITAN 2 GB",
+    "name": "Shean TITAN 2 GB",
     "ramType": "DDR4",
     "freq": "2133",
     "quality": "2",
@@ -18,7 +18,7 @@
     "sellPrice": "8"
   },
   {
-    "name": "Mortoni Value Supreme 4 GB",
+    "name": "Mortoni Value Supreme 4 GB",
     "ramType": "DDR4",
     "freq": "2133",
     "quality": "4",
@@ -27,7 +27,7 @@
     "sellPrice": "13"
   },
   {
-    "name": "Shean TITAN 4 GB",
+    "name": "Shean TITAN 4 GB",
     "ramType": "DDR4",
     "freq": "2133",
     "quality": "4",
@@ -36,7 +36,7 @@
     "sellPrice": "15"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 4 GB",
+    "name": "Team Group Team T-Force DARK (Red) 4 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "4",
@@ -45,7 +45,7 @@
     "sellPrice": "17"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 4 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 4 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "4",
@@ -54,7 +54,7 @@
     "sellPrice": "17"
   },
   {
-    "name": "Team Group Team T-Force DARK (Silver) 4 GB",
+    "name": "Team Group Team T-Force DARK (Red) 4 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "4",
@@ -63,34 +63,7 @@
     "sellPrice": "17"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 4 GB",
-    "ramType": "DDR4",
-    "freq": "2800",
-    "quality": "4",
-    "progress": "5690",
-    "price": "55",
-    "sellPrice": "18"
-  },
-  {
-    "name": "Team Group Team T-Force Delta II RGB Series (Black) 4 GB",
-    "ramType": "DDR4",
-    "freq": "2400",
-    "quality": "4",
-    "progress": "8400",
-    "price": "55",
-    "sellPrice": "18"
-  },
-  {
-    "name": "Team Group Team T-Force Delta II RGB Series (White) 4 GB",
-    "ramType": "DDR4",
-    "freq": "2400",
-    "quality": "4",
-    "progress": "8400",
-    "price": "55",
-    "sellPrice": "18"
-  },
-  {
-    "name": "Team Group Team T-Force Delta II RGB Series (Black) 4 GB",
+    "name": "Team Group Team T-Force Delta II RGB Series (Black) 4 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "4",
@@ -99,7 +72,25 @@
     "sellPrice": "18"
   },
   {
-    "name": "Team Group Team T-Force DARK (Silver) 4 GB",
+    "name": "Team Group Team T-Force Delta II RGB Series (White) 4 GB",
+    "ramType": "DDR4",
+    "freq": "2400",
+    "quality": "4",
+    "progress": "8400",
+    "price": "55",
+    "sellPrice": "18"
+  },
+  {
+    "name": "Team Group Team T-Force Delta II RGB Series (Black) 4 GB",
+    "ramType": "DDR4",
+    "freq": "2400",
+    "quality": "4",
+    "progress": "8400",
+    "price": "55",
+    "sellPrice": "18"
+  },
+  {
+    "name": "Team Group Team T-Force DARK (Silver) 4 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "4",
@@ -108,7 +99,16 @@
     "sellPrice": "18"
   },
   {
-    "name": "CORSAIR Dominator Platinum 4 GB",
+    "name": "Team Group Team T-Force DARK (Red) 4 GB",
+    "ramType": "DDR4",
+    "freq": "2800",
+    "quality": "4",
+    "progress": "5690",
+    "price": "55",
+    "sellPrice": "18"
+  },
+  {
+    "name": "CORSAIR Dominator Platinum 4 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "4",
@@ -117,16 +117,7 @@
     "sellPrice": "20"
   },
   {
-    "name": "DFL MOTIV8OR 4 GB",
-    "ramType": "DDR4",
-    "freq": "2400",
-    "quality": "4",
-    "progress": "0",
-    "price": "60",
-    "sellPrice": "20"
-  },
-  {
-    "name": "CORSAIR Dominator Platinum 4 GB",
+    "name": "CORSAIR Dominator Platinum 4 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "4",
@@ -135,7 +126,16 @@
     "sellPrice": "20"
   },
   {
-    "name": "CORSAIR Dominator Platinum 4 GB",
+    "name": "DFL MOTIV8OR 4 GB",
+    "ramType": "DDR4",
+    "freq": "2400",
+    "quality": "4",
+    "progress": "0",
+    "price": "60",
+    "sellPrice": "20"
+  },
+  {
+    "name": "CORSAIR Dominator Platinum 4 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "4",
@@ -144,16 +144,7 @@
     "sellPrice": "22"
   },
   {
-    "name": "CORSAIR Dominator Platinum 4 GB",
-    "ramType": "DDR4",
-    "freq": "4000",
-    "quality": "4",
-    "progress": "59464",
-    "price": "80",
-    "sellPrice": "27"
-  },
-  {
-    "name": "Shean TITAN XL 8 GB",
+    "name": "Shean TITAN XL 8 GB",
     "ramType": "DDR4",
     "freq": "2133",
     "quality": "8",
@@ -162,7 +153,16 @@
     "sellPrice": "27"
   },
   {
-    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
+    "name": "CORSAIR Dominator Platinum 4 GB",
+    "ramType": "DDR4",
+    "freq": "4000",
+    "quality": "4",
+    "progress": "59464",
+    "price": "80",
+    "sellPrice": "27"
+  },
+  {
+    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -171,7 +171,7 @@
     "sellPrice": "28"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 8 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -180,7 +180,7 @@
     "sellPrice": "30"
   },
   {
-    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
+    "name": "Team Group Team T-Force DARK (Red) 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -189,7 +189,7 @@
     "sellPrice": "30"
   },
   {
-    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
+    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "8",
@@ -198,7 +198,16 @@
     "sellPrice": "32"
   },
   {
-    "name": "Team Group Team T-Force Delta II RGB Series (Black) 8 GB",
+    "name": "Team Group Team T-Force DARK (Red) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "6144",
+    "price": "95",
+    "sellPrice": "32"
+  },
+  {
+    "name": "Team Group Team T-Force Delta II RGB Series (Black) 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -207,25 +216,7 @@
     "sellPrice": "32"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "6144",
-    "price": "95",
-    "sellPrice": "32"
-  },
-  {
-    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "6144",
-    "price": "95",
-    "sellPrice": "32"
-  },
-  {
-    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "8",
@@ -234,7 +225,16 @@
     "sellPrice": "32"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 8 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "6144",
+    "price": "95",
+    "sellPrice": "32"
+  },
+  {
+    "name": "Team Group Team T-Force DARK (Red) 8 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "8",
@@ -243,34 +243,16 @@
     "sellPrice": "32"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (White LED) 8 GB",
+    "name": "Team Group Team T-Force Night Hawk RGB (Black) 8 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "8",
-    "progress": "24954",
+    "progress": "47494",
     "price": "100",
     "sellPrice": "33"
   },
   {
-    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "9778",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "Team Group Team T-Force Night Hawk (Blue LED) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "24954",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "Team Group Team T-Force Delta II RGB Series (Black) 8 GB",
+    "name": "Team Group Team T-Force Delta II RGB Series (Black) 8 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "8",
@@ -279,7 +261,25 @@
     "sellPrice": "33"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (White LED) 8 GB",
+    "name": "Team Group Team T-Force Delta II RGB Series (White) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "9778",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk (Red LED) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "24954",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk (White LED) 8 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "8",
@@ -288,7 +288,7 @@
     "sellPrice": "33"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Blue LED) 8 GB",
+    "name": "Team Group Team T-Force Night Hawk (Blue LED) 8 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "8",
@@ -297,7 +297,43 @@
     "sellPrice": "33"
   },
   {
-    "name": "DFL MOTIV8OR 8 GB",
+    "name": "Team Group Team T-Force Night Hawk (Red LED) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3200",
+    "quality": "8",
+    "progress": "31282",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk (White LED) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "24954",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk RGB (White) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "47494",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk (Blue LED) 8 GB",
+    "ramType": "DDR4",
+    "freq": "3000",
+    "quality": "8",
+    "progress": "24954",
+    "price": "100",
+    "sellPrice": "33"
+  },
+  {
+    "name": "DFL MOTIV8OR 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -306,52 +342,7 @@
     "sellPrice": "33"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Red LED) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3200",
-    "quality": "8",
-    "progress": "31282",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "Team Group Team T-Force Night Hawk RGB (Black) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "47494",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "Team Group Team T-Force Night Hawk RGB (White) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "47494",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "Team Group Team T-Force Night Hawk (Red LED) 8 GB",
-    "ramType": "DDR4",
-    "freq": "3000",
-    "quality": "8",
-    "progress": "24954",
-    "price": "100",
-    "sellPrice": "33"
-  },
-  {
-    "name": "CORSAIR Dominator Platinum 8 GB",
-    "ramType": "DDR4",
-    "freq": "2800",
-    "quality": "8",
-    "progress": "16000",
-    "price": "105",
-    "sellPrice": "35"
-  },
-  {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "8",
@@ -360,7 +351,16 @@
     "sellPrice": "35"
   },
   {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
+    "ramType": "DDR4",
+    "freq": "2800",
+    "quality": "8",
+    "progress": "16000",
+    "price": "105",
+    "sellPrice": "35"
+  },
+  {
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "8",
@@ -369,7 +369,7 @@
     "sellPrice": "37"
   },
   {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "8",
@@ -378,7 +378,7 @@
     "sellPrice": "38"
   },
   {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "8",
@@ -387,7 +387,7 @@
     "sellPrice": "40"
   },
   {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "3600",
     "quality": "8",
@@ -396,7 +396,7 @@
     "sellPrice": "42"
   },
   {
-    "name": "CORSAIR Dominator Platinum 8 GB",
+    "name": "CORSAIR Dominator Platinum 8 GB",
     "ramType": "DDR4",
     "freq": "3733",
     "quality": "8",
@@ -405,7 +405,7 @@
     "sellPrice": "42"
   },
   {
-    "name": "Team Group Team T-Force DARK (Red) 16 GB",
+    "name": "Team Group Team T-Force DARK (Red) 16 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "16",
@@ -414,16 +414,7 @@
     "sellPrice": "58"
   },
   {
-    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
-    "ramType": "DDR4",
-    "freq": "2800",
-    "quality": "16",
-    "progress": "5690",
-    "price": "180",
-    "sellPrice": "60"
-  },
-  {
-    "name": "Team Group Team T-Force DARK (Red) 16 GB",
+    "name": "Team Group Team T-Force DARK (Red) 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -432,7 +423,7 @@
     "sellPrice": "60"
   },
   {
-    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -441,16 +432,7 @@
     "sellPrice": "60"
   },
   {
-    "name": "CORSAIR Dominator Platinum 16 GB",
-    "ramType": "DDR4",
-    "freq": "2800",
-    "quality": "16",
-    "progress": "16494",
-    "price": "180",
-    "sellPrice": "60"
-  },
-  {
-    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
+    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "16",
@@ -459,7 +441,25 @@
     "sellPrice": "60"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Red LED) 16 GB",
+    "name": "CORSAIR Dominator Platinum 16 GB",
+    "ramType": "DDR4",
+    "freq": "2800",
+    "quality": "16",
+    "progress": "16494",
+    "price": "180",
+    "sellPrice": "60"
+  },
+  {
+    "name": "Team Group Team T-Force DARK (Silver) 16 GB",
+    "ramType": "DDR4",
+    "freq": "2800",
+    "quality": "16",
+    "progress": "5690",
+    "price": "180",
+    "sellPrice": "60"
+  },
+  {
+    "name": "Team Group Team T-Force Night Hawk (Blue LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -468,7 +468,7 @@
     "sellPrice": "62"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Blue LED) 16 GB",
+    "name": "Team Group Team T-Force Night Hawk (Red LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -477,7 +477,7 @@
     "sellPrice": "62"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (White LED) 16 GB",
+    "name": "Team Group Team T-Force Night Hawk (White LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -486,7 +486,7 @@
     "sellPrice": "62"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Red LED) 16 GB",
+    "name": "Team Group Team T-Force Night Hawk (White LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "16",
@@ -495,7 +495,7 @@
     "sellPrice": "63"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (Blue LED) 16 GB",
+    "name": "Team Group Team T-Force Night Hawk (Red LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "16",
@@ -504,7 +504,7 @@
     "sellPrice": "63"
   },
   {
-    "name": "Team Group Team T-Force Night Hawk (White LED) 16 GB",
+    "name": "Team Group Team T-Force Night Hawk (Blue LED) 16 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "16",
@@ -513,7 +513,7 @@
     "sellPrice": "63"
   },
   {
-    "name": "CORSAIR Dominator Platinum 16 GB",
+    "name": "CORSAIR Dominator Platinum 16 GB",
     "ramType": "DDR4",
     "freq": "2400",
     "quality": "16",
@@ -522,7 +522,7 @@
     "sellPrice": "67"
   },
   {
-    "name": "CORSAIR Dominator Platinum 16 GB",
+    "name": "CORSAIR Dominator Platinum 16 GB",
     "ramType": "DDR4",
     "freq": "2666",
     "quality": "16",
@@ -531,7 +531,7 @@
     "sellPrice": "68"
   },
   {
-    "name": "CORSAIR Dominator Platinum 16 GB",
+    "name": "CORSAIR Dominator Platinum 16 GB",
     "ramType": "DDR4",
     "freq": "3000",
     "quality": "16",
@@ -540,7 +540,7 @@
     "sellPrice": "73"
   },
   {
-    "name": "CORSAIR Dominator Platinum 16 GB",
+    "name": "CORSAIR Dominator Platinum 16 GB",
     "ramType": "DDR4",
     "freq": "3200",
     "quality": "16",

@@ -15,6 +15,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+app.get('/favicon.ico', function(req, res) {
+    res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
+});
 
 //Variables for database info
 let CPUDB = require("./dataCPU");
@@ -77,6 +80,16 @@ function isInt(value) {
         parseInt(Number(value)) == value &&
         !isNaN(parseInt(value, 10));
 }
+function calcProgression(level, percent) {
+    if(level < levels.length && level > 0){
+        let baseLevel = levels[level-1];
+        let additional  = percent*(levels[level] - baseLevel)/100;
+        return baseLevel + additional;
+    }else {
+        return 0;
+    }
+}
+
 function findMBbyName(mbName){
     return MBDB.find(x => x["name"] === mbName);
 }
@@ -92,14 +105,17 @@ app.get('/getCPUList', function (req, res) {
 app.get('/getGPUList', function (req, res) {
     let newList = [];
     GPUDB.forEach(function (item, i) {
-        newList.push({"id":i+1, "Name": item["name"], "Core Clock": item["coreClock"] +"HZ", "Memory Clock": item["memClock"] +"HZ", "Price": item["price"]+"$"});
+        newList.push({"id":i+1, "Name": item["name"], "Core Clock": item["coreClock"] +"HZ", "Memory Clock": item["memClock"] +"HZ", "Price": item["price"]+"$",
+            "multiGPU": item["doubleGPU"]});
+        if(item["doubleGPU"] === "True") newList[i]["Technology"] = item["useSLI"] === "True" ? "SLI" : "CrossFire";
     });
     res.json(newList);
 });
 app.get('/getMBList', function (req, res) {
     let newList = [];
     MBDB.forEach(function (item, i) {
-        newList.push({"id":i+1, "Name": item["name"], "Socket": item["socket"], "RAM Support": item["ramType"], "RAM Speed": item["maxMemSpeed"] +"HZ", "Price": item["price"]+"$"});
+        newList.push({"id":i+1, "Name": item["name"], "Socket": item["socket"], "RAM Support": item["ramType"], "RAM Speed": item["maxMemSpeed"] +"HZ", "Price": item["price"]+"$",
+            "SLI": item["supportSLI"], "CrossFire": item["supportCrossfire"]});
     });
     res.json(newList);
 });
@@ -180,18 +196,18 @@ app.post('/calcTools', function (req, res) {
                         build = ScoreDB.find(x => findMBbyName(x["MB"])["socket"] === mb["socket"] && x["GPU"] === gpu["name"] && x["GPU Quantity"] === gpuCount && x["Score"] >= targetScore);
                         errorText = " Can't meet required score by upgrading only CPU.";
                     }
-                    if(method==="upgradeGPU"){
-                        build = ScoreDB.find(x => findMBbyName(x["MB"])["socket"] === mb["socket"] && x["CPU"] === cpu["name"] && x["Usefull RAM Freq"] === ram["freq"] && x["RAM Sticks"] === sticks && x["Score"] >= targetScore);
+                    else if(method==="upgradeGPU"){
+                        build = ScoreDB.find(x => findMBbyName(x["MB"])["socket"] === mb["socket"] && x["CPU"] === cpu["name"] && (x["RAM Freq"] === ram["freq"] || x["RAM Freq"] >= mb["maxMemSpeed"]) && x["RAM Sticks"] === sticks && x["Score"] >= targetScore);
                         errorText = " Can't meet required score by upgrading only GPU";
                     }
-                    if(method === "upgradeOptimal") {
+                    else if(method === "upgradeOptimal") {
                         build = ScoreDB.find(x => x["Score"] >= targetScore);
                         errorText = " Can't score that high";
                     }
                     if (build!==undefined){
                         build = JSON.parse(JSON.stringify(build));
                         let currBuidPrice = parseInt(cpu["price"]) + parseInt(gpu["price"])*gpuCount + parseInt(mb["price"]) + parseInt(ram["price"])*sticks;
-                        let cheapestRAM = RAMDB.find(x => x["freq"] === build["Usefull RAM Freq"].toString());
+                        let cheapestRAM = RAMDB.find(x => x["freq"] === build["RAM Freq"].toString());
                         let currBuild = {
                             "CPU": cpu["name"],
                             "GPU": gpu["name"],
@@ -202,10 +218,8 @@ app.post('/calcTools', function (req, res) {
                             "Score": calcScore(cpu, gpu, mb, ram["freq"], sticks, gpuCount)["Total score"],
                             "Price": currBuidPrice
                         };
-
                         build["RAM"] = cheapestRAM["name"];
-                        build["RAM Freq"] = undefined;
-                        build["Usefull RAM Freq"] = undefined;
+						build["Progress"] = undefined;
                         let obj = {"Starting Build": currBuild, "Result Build": build, "Price difference": build["Price"] - currBuidPrice};
                         res.json(obj);
                     }else res.status(200).json({"Error": errorText});
