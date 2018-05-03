@@ -3,6 +3,8 @@ This tool is created for Steam Game [PC Building Simulator](https://store.steamp
 Many of players including me experienced problem how to complete 3D Mark Jobs easily and efficiently.
 After gathering info on Steam Discussions I decided to create my own solution to the problem and here it is.
 
+Online version can be found here: https://pcbs.herokuapp.com
+
 ## Features
 
 * Calculating score of selected build without need to do it in-game
