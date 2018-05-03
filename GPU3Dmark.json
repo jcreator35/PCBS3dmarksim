@@ -7,11 +7,11 @@
     "progress": 7490
   },
   {
-    "name": "GIGABYTE AORUS GeForce GTX 1080 Ti Xtreme Edition 11G",
-    "score": 17777,
-    "quantity": 2,
-    "price": 1820,
-    "progress": 69464
+    "name": "EVGA GeForce GT 1030 SC",
+    "score": 1000,
+    "quantity": 1,
+    "price": 75,
+    "progress": 6600
   },
   {
     "name": "Shean GeForce GTX 750 Ti GAMER",
@@ -28,15 +28,8 @@
     "progress": 3163
   },
   {
-    "name": "MSI Radeon R7 370 GAMING 2G",
-    "score": 2953,
-    "quantity": 2,
-    "price": 230,
-    "progress": 3163
-  },
-  {
-    "name": "GIGABYTE GeForce GTX 1050 Windforce OC 2G",
-    "score": 1556,
+    "name": "MSI GeForce GTX 1050 GAMING 2G",
+    "score": 1481,
     "quantity": 1,
     "price": 120,
     "progress": 0
@@ -49,24 +42,24 @@
     "progress": 3254
   },
   {
-    "name": "MSI Radeon R7 370 GAMING 4G",
-    "score": 3055,
-    "quantity": 2,
-    "price": 240,
-    "progress": 3254
+    "name": "GIGABYTE GeForce GTX 1050 Windforce OC 2G",
+    "score": 1556,
+    "quantity": 1,
+    "price": 120,
+    "progress": 0
+  },
+  {
+    "name": "MSI GeForce GTX 1050 GAMING X 2G",
+    "score": 1556,
+    "quantity": 1,
+    "price": 125,
+    "progress": 0
   },
   {
     "name": "MSI GeForce GTX 950 GAMING 2G",
     "score": 1846,
     "quantity": 1,
     "price": 140,
-    "progress": 14484
-  },
-  {
-    "name": "MSI GeForce GTX 950 GAMING 2G",
-    "score": 3591,
-    "quantity": 2,
-    "price": 280,
     "progress": 14484
   },
   {
@@ -91,28 +84,7 @@
     "progress": 0
   },
   {
-    "name": "DFL Radeon R9 280 GR8 3G",
-    "score": 4013,
-    "quantity": 2,
-    "price": 320,
-    "progress": 0
-  },
-  {
     "name": "MSI GeForce GTX 1050 Ti GAMING X 4G",
-    "score": 2046,
-    "quantity": 1,
-    "price": 165,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 1050 GAMING 2G",
-    "score": 2046,
-    "quantity": 1,
-    "price": 165,
-    "progress": 0
-  },
-  {
-    "name": "GIGABYTE GeForce GTX 1050 Ti Windforce OC 4G",
     "score": 2046,
     "quantity": 1,
     "price": 165,
@@ -126,45 +98,10 @@
     "progress": 3526
   },
   {
-    "name": "MSI Radeon R9 280 GAMING 3G LE",
-    "score": 4033,
-    "quantity": 2,
-    "price": 330,
-    "progress": 3526
-  },
-  {
-    "name": "MSI GeForce GTX 1050 GAMING X 2G",
-    "score": 2113,
+    "name": "GIGABYTE GeForce GTX 1050 Ti Windforce OC 4G",
+    "score": 2046,
     "quantity": 1,
-    "price": 170,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 2G LE",
-    "score": 2123,
-    "quantity": 1,
-    "price": 170,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 2G LE",
-    "score": 4197,
-    "quantity": 2,
-    "price": 340,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 4G LE",
-    "score": 2123,
-    "quantity": 1,
-    "price": 170,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 4G LE",
-    "score": 4197,
-    "quantity": 2,
-    "price": 340,
+    "price": 165,
     "progress": 0
   },
   {
@@ -175,11 +112,11 @@
     "progress": 4072
   },
   {
-    "name": "MSI Radeon R9 280 GAMING 3G",
-    "score": 4064,
-    "quantity": 2,
-    "price": 340,
-    "progress": 4072
+    "name": "MSI GeForce GTX 960 GAMING 2G LE",
+    "score": 2123,
+    "quantity": 1,
+    "price": 170,
+    "progress": 0
   },
   {
     "name": "MSI GeForce GTX 960 GAMING LE 100ME",
@@ -189,24 +126,10 @@
     "progress": 0
   },
   {
-    "name": "MSI GeForce GTX 960 GAMING LE 100ME",
-    "score": 4197,
-    "quantity": 2,
-    "price": 340,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 100ME",
-    "score": 2225,
+    "name": "MSI GeForce GTX 960 GAMING 4G LE",
+    "score": 2123,
     "quantity": 1,
-    "price": 180,
-    "progress": 0
-  },
-  {
-    "name": "MSI GeForce GTX 960 GAMING 100ME",
-    "score": 4386,
-    "quantity": 2,
-    "price": 360,
+    "price": 170,
     "progress": 0
   },
   {
@@ -217,13 +140,6 @@
     "progress": 0
   },
   {
-    "name": "MSI GeForce GTX 960 GAMING 2G",
-    "score": 4386,
-    "quantity": 2,
-    "price": 360,
-    "progress": 0
-  },
-  {
     "name": "MSI GeForce GTX 960 GAMING 4G",
     "score": 2225,
     "quantity": 1,
@@ -231,10 +147,10 @@
     "progress": 0
   },
   {
-    "name": "MSI GeForce GTX 960 GAMING 4G",
-    "score": 4386,
-    "quantity": 2,
-    "price": 360,
+    "name": "MSI GeForce GTX 960 GAMING 100ME",
+    "score": 2225,
+    "quantity": 1,
+    "price": 180,
     "progress": 0
   },
   {
@@ -245,13 +161,6 @@
     "progress": 4963
   },
   {
-    "name": "MSI Radeon R9 380 GAMING 2G",
-    "score": 5313,
-    "quantity": 2,
-    "price": 430,
-    "progress": 4963
-  },
-  {
     "name": "MSI Radeon R9 380 GAMING 4G",
     "score": 2685,
     "quantity": 1,
@@ -259,25 +168,18 @@
     "progress": 5326
   },
   {
-    "name": "MSI Radeon R9 380 GAMING 4G",
-    "score": 5313,
+    "name": "MSI Radeon R7 370 GAMING 2G",
+    "score": 2953,
     "quantity": 2,
-    "price": 430,
-    "progress": 5326
+    "price": 230,
+    "progress": 3163
   },
   {
-    "name": "Shean GeForce GTX 970 GAMER",
-    "score": 3193,
-    "quantity": 1,
-    "price": 265,
-    "progress": 0
-  },
-  {
-    "name": "Shean GeForce GTX 970 GAMER",
-    "score": 6157,
+    "name": "MSI Radeon R7 370 GAMING 4G",
+    "score": 3055,
     "quantity": 2,
-    "price": 530,
-    "progress": 0
+    "price": 240,
+    "progress": 3254
   },
   {
     "name": "MSI GeForce GTX 970 GAMING 4G",
@@ -287,11 +189,11 @@
     "progress": 3617
   },
   {
-    "name": "MSI GeForce GTX 970 GAMING 4G",
-    "score": 6157,
-    "quantity": 2,
-    "price": 530,
-    "progress": 3617
+    "name": "Shean GeForce GTX 970 GAMER",
+    "score": 3193,
+    "quantity": 1,
+    "price": 265,
+    "progress": 0
   },
   {
     "name": "MSI GeForce GTX 970 GAMING LE 100ME",
@@ -301,11 +203,18 @@
     "progress": 3000
   },
   {
-    "name": "MSI GeForce GTX 970 GAMING LE 100ME",
-    "score": 6354,
+    "name": "Shean GeForce GTX 970 GAMER XL",
+    "score": 3348,
+    "quantity": 1,
+    "price": 280,
+    "progress": 0
+  },
+  {
+    "name": "MSI GeForce GTX 950 GAMING 2G",
+    "score": 3591,
     "quantity": 2,
-    "price": 550,
-    "progress": 3000
+    "price": 280,
+    "progress": 14484
   },
   {
     "name": "MSI GeForce GTX 970 GAMING 100ME",
@@ -315,27 +224,6 @@
     "progress": 4253
   },
   {
-    "name": "MSI GeForce GTX 970 GAMING 100ME",
-    "score": 6546,
-    "quantity": 2,
-    "price": 560,
-    "progress": 4253
-  },
-  {
-    "name": "Shean GeForce GTX 970 GAMER XL",
-    "score": 3348,
-    "quantity": 1,
-    "price": 280,
-    "progress": 0
-  },
-  {
-    "name": "Shean GeForce GTX 970 GAMER XL",
-    "score": 6484,
-    "quantity": 2,
-    "price": 560,
-    "progress": 0
-  },
-  {
     "name": "MSI GeForce GTX 970 GAMING 4G Golden Edition",
     "score": 3441,
     "quantity": 1,
@@ -343,11 +231,11 @@
     "progress": 4526
   },
   {
-    "name": "MSI GeForce GTX 970 GAMING 4G Golden Edition",
-    "score": 6681,
-    "quantity": 2,
-    "price": 570,
-    "progress": 4526
+    "name": "MSI Radeon RX 470 GAMING 8G",
+    "score": 3539,
+    "quantity": 1,
+    "price": 295,
+    "progress": 5690
   },
   {
     "name": "EVGA GeForce GTX 1060 GAMING 3GB",
@@ -364,38 +252,17 @@
     "progress": 5326
   },
   {
-    "name": "MSI Radeon RX 470 GAMING 4G",
-    "score": 6914,
-    "quantity": 2,
-    "price": 590,
-    "progress": 5326
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING 8G",
-    "score": 3539,
+    "name": "MSI Radeon RX 470 GAMING X 8G",
+    "score": 3589,
     "quantity": 1,
-    "price": 295,
-    "progress": 5690
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING 8G",
-    "score": 6914,
-    "quantity": 2,
-    "price": 590,
-    "progress": 5690
+    "price": 300,
+    "progress": 6144
   },
   {
     "name": "DFL Radeon R9 290 GR8",
     "score": 3572,
     "quantity": 1,
     "price": 300,
-    "progress": 0
-  },
-  {
-    "name": "DFL Radeon R9 290 GR8",
-    "score": 6972,
-    "quantity": 2,
-    "price": 600,
     "progress": 0
   },
   {
@@ -406,39 +273,18 @@
     "progress": 10074
   },
   {
+    "name": "MSI Radeon RX 470 GAMING X 4G",
+    "score": 3589,
+    "quantity": 1,
+    "price": 300,
+    "progress": 4800
+  },
+  {
     "name": "MSI GeForce GTX 1060 GAMING VR 3G",
     "score": 3590,
     "quantity": 1,
     "price": 300,
     "progress": 8802
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING X 8G",
-    "score": 3589,
-    "quantity": 1,
-    "price": 300,
-    "progress": 6144
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING X 8G",
-    "score": 6934,
-    "quantity": 2,
-    "price": 600,
-    "progress": 6144
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING X 4G",
-    "score": 3589,
-    "quantity": 1,
-    "price": 300,
-    "progress": 4800
-  },
-  {
-    "name": "MSI Radeon RX 470 GAMING X 4G",
-    "score": 6934,
-    "quantity": 2,
-    "price": 600,
-    "progress": 4800
   },
   {
     "name": "MSI GeForce GTX 1060 GAMING X 3G",
@@ -448,6 +294,13 @@
     "progress": 9226
   },
   {
+    "name": "MSI Radeon RX 570 GAMING 8G",
+    "score": 3707,
+    "quantity": 1,
+    "price": 310,
+    "progress": 14787
+  },
+  {
     "name": "MSI GeForce GTX 1060 GAMING VR X 3G",
     "score": 3701,
     "quantity": 1,
@@ -455,20 +308,6 @@
     "progress": 8400
   },
   {
-    "name": "MSI Radeon RX 570 GAMING 8G",
-    "score": 3707,
-    "quantity": 1,
-    "price": 310,
-    "progress": 14787
-  },
-  {
-    "name": "MSI Radeon RX 570 GAMING 8G",
-    "score": 6947,
-    "quantity": 2,
-    "price": 620,
-    "progress": 14787
-  },
-  {
     "name": "MSI Radeon RX 570 GAMING 4G",
     "score": 3707,
     "quantity": 1,
@@ -476,39 +315,11 @@
     "progress": 15393
   },
   {
-    "name": "MSI Radeon RX 570 GAMING 4G",
-    "score": 6947,
+    "name": "DFL Radeon R9 280 GR8 3G",
+    "score": 4013,
     "quantity": 2,
-    "price": 620,
-    "progress": 15393
-  },
-  {
-    "name": "MSI Radeon RX 570 GAMING X 4G",
-    "score": 3758,
-    "quantity": 1,
-    "price": 325,
-    "progress": 14181
-  },
-  {
-    "name": "MSI Radeon RX 570 GAMING X 4G",
-    "score": 7062,
-    "quantity": 2,
-    "price": 650,
-    "progress": 14181
-  },
-  {
-    "name": "GIGABYTE AORUS Radeon RX570 4G",
-    "score": 3761,
-    "quantity": 1,
-    "price": 325,
-    "progress": 13000
-  },
-  {
-    "name": "GIGABYTE AORUS Radeon RX570 4G",
-    "score": 7034,
-    "quantity": 2,
-    "price": 650,
-    "progress": 13000
+    "price": 320,
+    "progress": 0
   },
   {
     "name": "DFL Radeon R9 290 GR8TOR",
@@ -518,13 +329,6 @@
     "progress": 0
   },
   {
-    "name": "DFL Radeon R9 290 GR8TOR",
-    "score": 7251,
-    "quantity": 2,
-    "price": 650,
-    "progress": 0
-  },
-  {
     "name": "MSI Radeon RX 570 GAMING X 8G",
     "score": 3758,
     "quantity": 1,
@@ -532,11 +336,18 @@
     "progress": 13575
   },
   {
-    "name": "MSI Radeon RX 570 GAMING X 8G",
-    "score": 7062,
-    "quantity": 2,
-    "price": 650,
-    "progress": 13575
+    "name": "MSI Radeon RX 570 GAMING X 4G",
+    "score": 3758,
+    "quantity": 1,
+    "price": 325,
+    "progress": 14181
+  },
+  {
+    "name": "GIGABYTE AORUS Radeon RX570 4G",
+    "score": 3761,
+    "quantity": 1,
+    "price": 325,
+    "progress": 13000
   },
   {
     "name": "MSI GeForce GTX 1060 GAMING 6G",
@@ -553,18 +364,11 @@
     "progress": 18438
   },
   {
-    "name": "MSI Radeon R9 390 GAMING 8G LE",
-    "score": 3885,
-    "quantity": 1,
-    "price": 340,
-    "progress": 11484
-  },
-  {
-    "name": "MSI Radeon R9 390 GAMING 8G LE",
-    "score": 7586,
+    "name": "MSI Radeon R9 280 GAMING 3G LE",
+    "score": 4033,
     "quantity": 2,
-    "price": 680,
-    "progress": 11484
+    "price": 330,
+    "progress": 3526
   },
   {
     "name": "MSI GeForce GTX 1060 GAMING VR X 6G",
@@ -574,20 +378,6 @@
     "progress": 17731
   },
   {
-    "name": "MSI Radeon RX 480 GAMING 4G",
-    "score": 3911,
-    "quantity": 1,
-    "price": 340,
-    "progress": 19863
-  },
-  {
-    "name": "MSI Radeon RX 480 GAMING 4G",
-    "score": 7564,
-    "quantity": 2,
-    "price": 680,
-    "progress": 19863
-  },
-  {
     "name": "Shean GeForce GTX 980 GAMER",
     "score": 3938,
     "quantity": 1,
@@ -595,18 +385,25 @@
     "progress": 3890
   },
   {
-    "name": "Shean GeForce GTX 980 GAMER",
-    "score": 7712,
-    "quantity": 2,
-    "price": 680,
-    "progress": 3890
-  },
-  {
-    "name": "MSI GeForce GTX 1060 GAMING X 6G",
-    "score": 3931,
+    "name": "MSI Radeon RX 480 GAMING 4G",
+    "score": 3911,
     "quantity": 1,
     "price": 340,
-    "progress": 17378
+    "progress": 19863
+  },
+  {
+    "name": "MSI Radeon R9 390 GAMING 8G LE",
+    "score": 3885,
+    "quantity": 1,
+    "price": 340,
+    "progress": 11484
+  },
+  {
+    "name": "MSI GeForce GTX 960 GAMING LE 100ME",
+    "score": 4197,
+    "quantity": 2,
+    "price": 340,
+    "progress": 0
   },
   {
     "name": "MSI GeForce GTX 1060 GAMING+ 6G",
@@ -616,6 +413,34 @@
     "progress": 18085
   },
   {
+    "name": "MSI GeForce GTX 960 GAMING 2G LE",
+    "score": 4197,
+    "quantity": 2,
+    "price": 340,
+    "progress": 0
+  },
+  {
+    "name": "MSI GeForce GTX 1060 GAMING X 6G",
+    "score": 3931,
+    "quantity": 1,
+    "price": 340,
+    "progress": 17378
+  },
+  {
+    "name": "MSI Radeon R9 280 GAMING 3G",
+    "score": 4064,
+    "quantity": 2,
+    "price": 340,
+    "progress": 4072
+  },
+  {
+    "name": "MSI GeForce GTX 960 GAMING 4G LE",
+    "score": 4197,
+    "quantity": 2,
+    "price": 340,
+    "progress": 0
+  },
+  {
     "name": "MSI Radeon RX 480 GAMING X 4G",
     "score": 3976,
     "quantity": 1,
@@ -623,24 +448,10 @@
     "progress": 19500
   },
   {
-    "name": "MSI Radeon RX 480 GAMING X 4G",
-    "score": 7701,
-    "quantity": 2,
-    "price": 690,
-    "progress": 19500
-  },
-  {
-    "name": "EVGA GeForce GT 1030 SC",
-    "score": 1000,
-    "quantity": 1,
-    "price": 75,
-    "progress": 6600
-  },
-  {
     "name": "MSI Radeon R9 390 GAMING 8G",
-    "score": 7984,
-    "quantity": 2,
-    "price": 700,
+    "score": 4041,
+    "quantity": 1,
+    "price": 350,
     "progress": 10979
   },
   {
@@ -651,13 +462,6 @@
     "progress": 16671
   },
   {
-    "name": "MSI GeForce GTX 1060 GAMING X+ 6G",
-    "score": 4049,
-    "quantity": 1,
-    "price": 350,
-    "progress": 8590
-  },
-  {
     "name": "MSI Radeon RX 480 GAMING 8G",
     "score": 4024,
     "quantity": 1,
@@ -665,24 +469,17 @@
     "progress": 20873
   },
   {
-    "name": "MSI Radeon RX 480 GAMING 8G",
-    "score": 7727,
-    "quantity": 2,
-    "price": 700,
-    "progress": 20873
+    "name": "MSI GeForce GTX 1060 GAMING X+ 6G",
+    "score": 4049,
+    "quantity": 1,
+    "price": 350,
+    "progress": 8590
   },
   {
     "name": "MSI GeForce GTX 980 GAMING 4G LE",
     "score": 4051,
     "quantity": 1,
     "price": 350,
-    "progress": 3000
-  },
-  {
-    "name": "MSI GeForce GTX 980 GAMING 4G LE",
-    "score": 7915,
-    "quantity": 2,
-    "price": 700,
     "progress": 3000
   },
   {
@@ -693,6 +490,13 @@
     "progress": 17024
   },
   {
+    "name": "GIGABYTE AORUS GeForce GTX 1060 Xtreme Edition 6G",
+    "score": 4083,
+    "quantity": 1,
+    "price": 355,
+    "progress": 16000
+  },
+  {
     "name": "MSI Radeon RX 480 GAMING X 8G",
     "score": 4089,
     "quantity": 1,
@@ -700,18 +504,25 @@
     "progress": 22489
   },
   {
-    "name": "MSI Radeon RX 480 GAMING X 8G",
-    "score": 7864,
+    "name": "MSI GeForce GTX 960 GAMING 4G",
+    "score": 4386,
     "quantity": 2,
-    "price": 710,
-    "progress": 22489
+    "price": 360,
+    "progress": 0
   },
   {
-    "name": "GIGABYTE AORUS GeForce GTX 1060 Xtreme Edition 6G",
-    "score": 4083,
-    "quantity": 1,
-    "price": 355,
-    "progress": 16000
+    "name": "MSI GeForce GTX 960 GAMING 100ME",
+    "score": 4386,
+    "quantity": 2,
+    "price": 360,
+    "progress": 0
+  },
+  {
+    "name": "MSI GeForce GTX 960 GAMING 2G",
+    "score": 4386,
+    "quantity": 2,
+    "price": 360,
+    "progress": 0
   },
   {
     "name": "Shean GeForce GTX 980 GAMER XL",
@@ -721,11 +532,11 @@
     "progress": 4181
   },
   {
-    "name": "Shean GeForce GTX 980 GAMER XL",
-    "score": 8058,
-    "quantity": 2,
-    "price": 750,
-    "progress": 4181
+    "name": "MSI Radeon RX 580 GAMING 4G",
+    "score": 4242,
+    "quantity": 1,
+    "price": 385,
+    "progress": 44211
   },
   {
     "name": "MSI Radeon R9 390X GAMING 8G LE",
@@ -735,38 +546,10 @@
     "progress": 12494
   },
   {
-    "name": "MSI Radeon R9 390X GAMING 8G LE",
-    "score": 8158,
-    "quantity": 2,
-    "price": 770,
-    "progress": 12494
-  },
-  {
-    "name": "MSI Radeon RX 580 GAMING 4G",
-    "score": 4242,
-    "quantity": 1,
-    "price": 385,
-    "progress": 44211
-  },
-  {
-    "name": "MSI Radeon RX 580 GAMING 4G",
-    "score": 8379,
-    "quantity": 2,
-    "price": 770,
-    "progress": 44211
-  },
-  {
     "name": "MSI Radeon RX 580 GAMING 8G",
     "score": 4302,
     "quantity": 1,
     "price": 390,
-    "progress": 40070
-  },
-  {
-    "name": "MSI Radeon RX 580 GAMING 8G",
-    "score": 8466,
-    "quantity": 2,
-    "price": 780,
     "progress": 40070
   },
   {
@@ -777,13 +560,6 @@
     "progress": 46736
   },
   {
-    "name": "GIGABYTE AORUS Radeon RX580 4G",
-    "score": 8434,
-    "quantity": 2,
-    "price": 780,
-    "progress": 46736
-  },
-  {
     "name": "MSI Radeon RX 580 GAMING X 4G",
     "score": 4304,
     "quantity": 1,
@@ -791,24 +567,17 @@
     "progress": 43000
   },
   {
-    "name": "MSI Radeon RX 580 GAMING X 4G",
-    "score": 8495,
-    "quantity": 2,
-    "price": 780,
-    "progress": 43000
+    "name": "MSI Radeon RX 580 GAMING X 8G",
+    "score": 4365,
+    "quantity": 1,
+    "price": 395,
+    "progress": 39464
   },
   {
     "name": "MSI Radeon R9 390X GAMING 8G",
     "score": 4334,
     "quantity": 1,
     "price": 395,
-    "progress": 11989
-  },
-  {
-    "name": "MSI Radeon R9 390X GAMING 8G",
-    "score": 8447,
-    "quantity": 2,
-    "price": 790,
     "progress": 11989
   },
   {
@@ -819,25 +588,11 @@
     "progress": 45474
   },
   {
-    "name": "GIGABYTE AORUS Radeon RX580 8G",
-    "score": 8522,
-    "quantity": 2,
-    "price": 790,
-    "progress": 45474
-  },
-  {
-    "name": "MSI Radeon RX 580 GAMING X 8G",
-    "score": 4365,
+    "name": "GIGABYTE AORUS Radeon RX580 XTR 8G",
+    "score": 4455,
     "quantity": 1,
-    "price": 395,
-    "progress": 39464
-  },
-  {
-    "name": "MSI Radeon RX 580 GAMING X 8G",
-    "score": 8582,
-    "quantity": 2,
-    "price": 790,
-    "progress": 39464
+    "price": 405,
+    "progress": 38000
   },
   {
     "name": "MSI Radeon RX 580 GAMING X+ 8G",
@@ -847,27 +602,6 @@
     "progress": 38454
   },
   {
-    "name": "MSI Radeon RX 580 GAMING X+ 8G",
-    "score": 8774,
-    "quantity": 2,
-    "price": 810,
-    "progress": 38454
-  },
-  {
-    "name": "GIGABYTE AORUS Radeon RX580 XTR 8G",
-    "score": 4455,
-    "quantity": 1,
-    "price": 405,
-    "progress": 38000
-  },
-  {
-    "name": "GIGABYTE AORUS Radeon RX580 XTR 8G",
-    "score": 8757,
-    "quantity": 2,
-    "price": 810,
-    "progress": 38000
-  },
-  {
     "name": "MSI Radeon RX 580 GAMING+ 8G",
     "score": 4438,
     "quantity": 1,
@@ -875,11 +609,18 @@
     "progress": 38959
   },
   {
-    "name": "MSI Radeon RX 580 GAMING+ 8G",
-    "score": 8725,
+    "name": "MSI Radeon R9 380 GAMING 2G",
+    "score": 5313,
     "quantity": 2,
-    "price": 810,
-    "progress": 38959
+    "price": 430,
+    "progress": 4963
+  },
+  {
+    "name": "MSI Radeon R9 380 GAMING 4G",
+    "score": 5313,
+    "quantity": 2,
+    "price": 430,
+    "progress": 5326
   },
   {
     "name": "MSI GeForce GTX 980 Ti GAMING 6G LE",
@@ -889,11 +630,11 @@
     "progress": 4800
   },
   {
-    "name": "MSI GeForce GTX 980 Ti GAMING 6G LE",
-    "score": 9475,
-    "quantity": 2,
-    "price": 870,
-    "progress": 4800
+    "name": "EVGA GeForce GTX 1070 GAMING",
+    "score": 5366,
+    "quantity": 1,
+    "price": 490,
+    "progress": 26181
   },
   {
     "name": "MSI GeForce GTX 980 Ti GAMING 6G",
@@ -903,38 +644,10 @@
     "progress": 5872
   },
   {
-    "name": "MSI GeForce GTX 980 Ti GAMING 6G",
-    "score": 10617,
-    "quantity": 2,
-    "price": 980,
-    "progress": 5872
-  },
-  {
-    "name": "EVGA GeForce GTX 1070 GAMING",
-    "score": 5366,
-    "quantity": 1,
-    "price": 490,
-    "progress": 26181
-  },
-  {
-    "name": "EVGA GeForce GTX 1070 GAMING",
-    "score": 10484,
-    "quantity": 2,
-    "price": 980,
-    "progress": 26181
-  },
-  {
     "name": "MSI GeForce GTX 980 Ti GAMING 6G GOLDEN EDITION",
     "score": 5454,
     "quantity": 1,
     "price": 495,
-    "progress": 5326
-  },
-  {
-    "name": "MSI GeForce GTX 980 Ti GAMING 6G GOLDEN EDITION",
-    "score": 10696,
-    "quantity": 2,
-    "price": 990,
     "progress": 5326
   },
   {
@@ -945,24 +658,24 @@
     "progress": 27090
   },
   {
-    "name": "MSI GeForce GTX 1070 GAMING 8G",
-    "score": 10678,
+    "name": "MSI GeForce GTX 970 GAMING 4G",
+    "score": 6157,
     "quantity": 2,
-    "price": 1040,
-    "progress": 27090
+    "price": 530,
+    "progress": 3617
+  },
+  {
+    "name": "Shean GeForce GTX 970 GAMER",
+    "score": 6157,
+    "quantity": 2,
+    "price": 530,
+    "progress": 0
   },
   {
     "name": "MSI GeForce GTX 1070 GAMING X 8G",
     "score": 5676,
     "quantity": 1,
     "price": 540,
-    "progress": 23500
-  },
-  {
-    "name": "MSI GeForce GTX 1070 GAMING X 8G",
-    "score": 11123,
-    "quantity": 2,
-    "price": 1080,
     "progress": 23500
   },
   {
@@ -973,11 +686,11 @@
     "progress": 25272
   },
   {
-    "name": "GIGABYTE AORUS GeForce GTX 1070 8G",
-    "score": 11261,
+    "name": "MSI GeForce GTX 970 GAMING LE 100ME",
+    "score": 6354,
     "quantity": 2,
-    "price": 1100,
-    "progress": 25272
+    "price": 550,
+    "progress": 3000
   },
   {
     "name": "MSI GeForce GTX 1070 GAMING Z 8G",
@@ -987,11 +700,25 @@
     "progress": 24363
   },
   {
-    "name": "MSI GeForce GTX 1070 GAMING Z 8G",
-    "score": 11444,
+    "name": "MSI GeForce GTX 970 GAMING 100ME",
+    "score": 6546,
     "quantity": 2,
-    "price": 1110,
-    "progress": 24363
+    "price": 560,
+    "progress": 4253
+  },
+  {
+    "name": "Shean GeForce GTX 970 GAMER XL",
+    "score": 6484,
+    "quantity": 2,
+    "price": 560,
+    "progress": 0
+  },
+  {
+    "name": "MSI GeForce GTX 970 GAMING 4G Golden Edition",
+    "score": 6681,
+    "quantity": 2,
+    "price": 570,
+    "progress": 4526
   },
   {
     "name": "AMD Radeon RX Vega 56",
@@ -1001,24 +728,45 @@
     "progress": 43000
   },
   {
-    "name": "AMD Radeon RX Vega 56",
-    "score": 11402,
+    "name": "MSI Radeon RX 470 GAMING 8G",
+    "score": 6914,
     "quantity": 2,
-    "price": 1160,
-    "progress": 43000
+    "price": 590,
+    "progress": 5690
+  },
+  {
+    "name": "MSI Radeon RX 470 GAMING 4G",
+    "score": 6914,
+    "quantity": 2,
+    "price": 590,
+    "progress": 5326
+  },
+  {
+    "name": "MSI Radeon RX 470 GAMING X 4G",
+    "score": 6934,
+    "quantity": 2,
+    "price": 600,
+    "progress": 4800
+  },
+  {
+    "name": "DFL Radeon R9 290 GR8",
+    "score": 6972,
+    "quantity": 2,
+    "price": 600,
+    "progress": 0
+  },
+  {
+    "name": "MSI Radeon RX 470 GAMING X 8G",
+    "score": 6934,
+    "quantity": 2,
+    "price": 600,
+    "progress": 6144
   },
   {
     "name": "MSI GeForce GTX 1070 Ti GAMING 8G",
     "score": 6380,
     "quantity": 1,
     "price": 610,
-    "progress": 53000
-  },
-  {
-    "name": "MSI GeForce GTX 1070 Ti GAMING 8G",
-    "score": 12011,
-    "quantity": 2,
-    "price": 1220,
     "progress": 53000
   },
   {
@@ -1029,11 +777,46 @@
     "progress": 54211
   },
   {
-    "name": "MSI GeForce GTX 1070 Ti Titanium 8G",
-    "score": 12011,
+    "name": "MSI Radeon RX 570 GAMING 8G",
+    "score": 6947,
     "quantity": 2,
-    "price": 1220,
-    "progress": 54211
+    "price": 620,
+    "progress": 14787
+  },
+  {
+    "name": "MSI Radeon RX 570 GAMING 4G",
+    "score": 6947,
+    "quantity": 2,
+    "price": 620,
+    "progress": 15393
+  },
+  {
+    "name": "MSI Radeon RX 570 GAMING X 8G",
+    "score": 7062,
+    "quantity": 2,
+    "price": 650,
+    "progress": 13575
+  },
+  {
+    "name": "GIGABYTE AORUS Radeon RX570 4G",
+    "score": 7034,
+    "quantity": 2,
+    "price": 650,
+    "progress": 13000
+  },
+  {
+    "name": "DFL Radeon R9 290 GR8TOR",
+    "score": 7251,
+    "quantity": 2,
+    "price": 650,
+    "progress": 0
+  },
+  {
+    "name": "MSI Radeon RX 570 GAMING X 4G",
+    "score": 7062,
+    "quantity": 2,
+    "price": 650,
+    "progress": 14181
   },
   {
     "name": "EVGA GeForce GTX 1080 GAMING",
@@ -1043,13 +826,6 @@
     "progress": 34211
   },
   {
-    "name": "EVGA GeForce GTX 1080 GAMING",
-    "score": 12837,
-    "quantity": 2,
-    "price": 1310,
-    "progress": 34211
-  },
-  {
     "name": "AMD Radeon RX Vega 64",
     "score": 6923,
     "quantity": 1,
@@ -1057,24 +833,10 @@
     "progress": 48000
   },
   {
-    "name": "AMD Radeon RX Vega 64",
-    "score": 12679,
-    "quantity": 2,
-    "price": 1320,
-    "progress": 48000
-  },
-  {
     "name": "GIGABYTE Radeon RX VEGA 64 8G",
     "score": 6923,
     "quantity": 1,
     "price": 660,
-    "progress": 49464
-  },
-  {
-    "name": "GIGABYTE Radeon RX VEGA 64 8G",
-    "score": 12679,
-    "quantity": 2,
-    "price": 1320,
     "progress": 49464
   },
   {
@@ -1085,25 +847,25 @@
     "progress": 35474
   },
   {
-    "name": "MSI GeForce GTX 1080 GAMING 8G",
-    "score": 13135,
+    "name": "MSI Radeon R9 390 GAMING 8G LE",
+    "score": 7586,
     "quantity": 2,
-    "price": 1330,
-    "progress": 35474
+    "price": 680,
+    "progress": 11484
   },
   {
-    "name": "MSI GeForce GTX 1080 GAMING+ 8G",
-    "score": 7239,
-    "quantity": 1,
-    "price": 690,
-    "progress": 29211
+    "name": "Shean GeForce GTX 980 GAMER",
+    "score": 7712,
+    "quantity": 2,
+    "price": 680,
+    "progress": 3890
   },
   {
-    "name": "MSI GeForce GTX 1080 GAMING+ 8G",
-    "score": 13281,
+    "name": "MSI Radeon RX 480 GAMING 4G",
+    "score": 7564,
     "quantity": 2,
-    "price": 1380,
-    "progress": 29211
+    "price": 680,
+    "progress": 19863
   },
   {
     "name": "MSI GeForce GTX 1080 GAMING X 8G",
@@ -1113,11 +875,18 @@
     "progress": 33000
   },
   {
-    "name": "MSI GeForce GTX 1080 GAMING X 8G",
-    "score": 13744,
+    "name": "MSI Radeon RX 480 GAMING X 4G",
+    "score": 7701,
     "quantity": 2,
-    "price": 1380,
-    "progress": 33000
+    "price": 690,
+    "progress": 19500
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING+ 8G",
+    "score": 7239,
+    "quantity": 1,
+    "price": 690,
+    "progress": 29211
   },
   {
     "name": "GIGABYTE AORUS GeForce GTX 1080 8G",
@@ -1127,24 +896,31 @@
     "progress": 36736
   },
   {
-    "name": "GIGABYTE AORUS GeForce GTX 1080 8G",
-    "score": 13934,
+    "name": "MSI Radeon R9 390 GAMING 8G",
+    "score": 7984,
     "quantity": 2,
-    "price": 1380,
-    "progress": 36736
+    "price": 700,
+    "progress": 10979
+  },
+  {
+    "name": "MSI GeForce GTX 980 GAMING 4G LE",
+    "score": 7915,
+    "quantity": 2,
+    "price": 700,
+    "progress": 3000
+  },
+  {
+    "name": "MSI Radeon RX 480 GAMING 8G",
+    "score": 7727,
+    "quantity": 2,
+    "price": 700,
+    "progress": 20873
   },
   {
     "name": "MSI GeForce GTX 1080 GAMING Z 8G",
     "score": 7395,
     "quantity": 1,
     "price": 705,
-    "progress": 29969
-  },
-  {
-    "name": "MSI GeForce GTX 1080 GAMING Z 8G",
-    "score": 14245,
-    "quantity": 2,
-    "price": 1410,
     "progress": 29969
   },
   {
@@ -1155,11 +931,11 @@
     "progress": 28454
   },
   {
-    "name": "MSI GeForce GTX 1080 GAMING X+ 8G",
-    "score": 13890,
+    "name": "MSI Radeon RX 480 GAMING X 8G",
+    "score": 7864,
     "quantity": 2,
-    "price": 1420,
-    "progress": 28454
+    "price": 710,
+    "progress": 22489
   },
   {
     "name": "GIGABYTE AORUS GeForce GTX 1080 Xtreme Edition 8G",
@@ -1169,11 +945,46 @@
     "progress": 28000
   },
   {
-    "name": "GIGABYTE AORUS GeForce GTX 1080 Xtreme Edition 8G",
-    "score": 14574,
+    "name": "Shean GeForce GTX 980 GAMER XL",
+    "score": 8058,
     "quantity": 2,
-    "price": 1460,
-    "progress": 28000
+    "price": 750,
+    "progress": 4181
+  },
+  {
+    "name": "MSI Radeon R9 390X GAMING 8G LE",
+    "score": 8158,
+    "quantity": 2,
+    "price": 770,
+    "progress": 12494
+  },
+  {
+    "name": "MSI Radeon RX 580 GAMING 4G",
+    "score": 8379,
+    "quantity": 2,
+    "price": 770,
+    "progress": 44211
+  },
+  {
+    "name": "GIGABYTE AORUS Radeon RX580 4G",
+    "score": 8434,
+    "quantity": 2,
+    "price": 780,
+    "progress": 46736
+  },
+  {
+    "name": "MSI Radeon RX 580 GAMING 8G",
+    "score": 8466,
+    "quantity": 2,
+    "price": 780,
+    "progress": 40070
+  },
+  {
+    "name": "MSI Radeon RX 580 GAMING X 4G",
+    "score": 8495,
+    "quantity": 2,
+    "price": 780,
+    "progress": 43000
   },
   {
     "name": "EVGA GeForce GTX 1080 Ti GAMING",
@@ -1183,11 +994,25 @@
     "progress": 58000
   },
   {
-    "name": "EVGA GeForce GTX 1080 Ti GAMING",
-    "score": 16213,
+    "name": "MSI Radeon RX 580 GAMING X 8G",
+    "score": 8582,
     "quantity": 2,
-    "price": 1570,
-    "progress": 58000
+    "price": 790,
+    "progress": 39464
+  },
+  {
+    "name": "MSI Radeon R9 390X GAMING 8G",
+    "score": 8447,
+    "quantity": 2,
+    "price": 790,
+    "progress": 11989
+  },
+  {
+    "name": "GIGABYTE AORUS Radeon RX580 8G",
+    "score": 8522,
+    "quantity": 2,
+    "price": 790,
+    "progress": 45474
   },
   {
     "name": "MSI GeForce GTX 1080 Ti GAMING 11G",
@@ -1197,11 +1022,25 @@
     "progress": 59464
   },
   {
-    "name": "MSI GeForce GTX 1080 Ti GAMING 11G",
-    "score": 16495,
+    "name": "GIGABYTE AORUS Radeon RX580 XTR 8G",
+    "score": 8757,
     "quantity": 2,
-    "price": 1610,
-    "progress": 59464
+    "price": 810,
+    "progress": 38000
+  },
+  {
+    "name": "MSI Radeon RX 580 GAMING X+ 8G",
+    "score": 8774,
+    "quantity": 2,
+    "price": 810,
+    "progress": 38454
+  },
+  {
+    "name": "MSI Radeon RX 580 GAMING+ 8G",
+    "score": 8725,
+    "quantity": 2,
+    "price": 810,
+    "progress": 38959
   },
   {
     "name": "MSI GeForce GTX 1080 Ti GAMING X 11G",
@@ -1211,24 +1050,17 @@
     "progress": 60979
   },
   {
-    "name": "MSI GeForce GTX 1080 Ti GAMING X 11G",
-    "score": 17041,
+    "name": "MSI GeForce GTX 980 Ti GAMING 6G LE",
+    "score": 9475,
     "quantity": 2,
-    "price": 1660,
-    "progress": 60979
+    "price": 870,
+    "progress": 4800
   },
   {
     "name": "EVGA GeForce GTX 1080 Ti K|NGP|N GAMING",
     "score": 8747,
     "quantity": 1,
     "price": 875,
-    "progress": 61989
-  },
-  {
-    "name": "EVGA GeForce GTX 1080 Ti K|NGP|N GAMING",
-    "score": 17032,
-    "quantity": 2,
-    "price": 1750,
     "progress": 61989
   },
   {
@@ -1239,6 +1071,181 @@
     "progress": 63706
   },
   {
+    "name": "GIGABYTE AORUS GeForce GTX 1080 Ti Xtreme Edition 11G",
+    "score": 9110,
+    "quantity": 1,
+    "price": 910,
+    "progress": 69464
+  },
+  {
+    "name": "MSI GeForce GTX 980 Ti GAMING 6G",
+    "score": 10617,
+    "quantity": 2,
+    "price": 980,
+    "progress": 5872
+  },
+  {
+    "name": "EVGA GeForce GTX 1070 GAMING",
+    "score": 10484,
+    "quantity": 2,
+    "price": 980,
+    "progress": 26181
+  },
+  {
+    "name": "MSI GeForce GTX 980 Ti GAMING 6G GOLDEN EDITION",
+    "score": 10696,
+    "quantity": 2,
+    "price": 990,
+    "progress": 5326
+  },
+  {
+    "name": "MSI GeForce GTX 1070 GAMING 8G",
+    "score": 10678,
+    "quantity": 2,
+    "price": 1040,
+    "progress": 27090
+  },
+  {
+    "name": "MSI GeForce GTX 1070 GAMING X 8G",
+    "score": 11123,
+    "quantity": 2,
+    "price": 1080,
+    "progress": 23500
+  },
+  {
+    "name": "GIGABYTE AORUS GeForce GTX 1070 8G",
+    "score": 11261,
+    "quantity": 2,
+    "price": 1100,
+    "progress": 25272
+  },
+  {
+    "name": "MSI GeForce GTX 1070 GAMING Z 8G",
+    "score": 11444,
+    "quantity": 2,
+    "price": 1110,
+    "progress": 24363
+  },
+  {
+    "name": "AMD Radeon RX Vega 56",
+    "score": 11402,
+    "quantity": 2,
+    "price": 1160,
+    "progress": 43000
+  },
+  {
+    "name": "MSI GeForce GTX 1070 Ti GAMING 8G",
+    "score": 12011,
+    "quantity": 2,
+    "price": 1220,
+    "progress": 53000
+  },
+  {
+    "name": "MSI GeForce GTX 1070 Ti Titanium 8G",
+    "score": 12011,
+    "quantity": 2,
+    "price": 1220,
+    "progress": 54211
+  },
+  {
+    "name": "EVGA GeForce GTX 1080 GAMING",
+    "score": 12837,
+    "quantity": 2,
+    "price": 1310,
+    "progress": 34211
+  },
+  {
+    "name": "GIGABYTE Radeon RX VEGA 64 8G",
+    "score": 12679,
+    "quantity": 2,
+    "price": 1320,
+    "progress": 49464
+  },
+  {
+    "name": "AMD Radeon RX Vega 64",
+    "score": 12679,
+    "quantity": 2,
+    "price": 1320,
+    "progress": 48000
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING 8G",
+    "score": 13135,
+    "quantity": 2,
+    "price": 1330,
+    "progress": 35474
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING X 8G",
+    "score": 13744,
+    "quantity": 2,
+    "price": 1380,
+    "progress": 33000
+  },
+  {
+    "name": "GIGABYTE AORUS GeForce GTX 1080 8G",
+    "score": 13934,
+    "quantity": 2,
+    "price": 1380,
+    "progress": 36736
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING+ 8G",
+    "score": 13281,
+    "quantity": 2,
+    "price": 1380,
+    "progress": 29211
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING Z 8G",
+    "score": 14245,
+    "quantity": 2,
+    "price": 1410,
+    "progress": 29969
+  },
+  {
+    "name": "MSI GeForce GTX 1080 GAMING X+ 8G",
+    "score": 13890,
+    "quantity": 2,
+    "price": 1420,
+    "progress": 28454
+  },
+  {
+    "name": "GIGABYTE AORUS GeForce GTX 1080 Xtreme Edition 8G",
+    "score": 14574,
+    "quantity": 2,
+    "price": 1460,
+    "progress": 28000
+  },
+  {
+    "name": "EVGA GeForce GTX 1080 Ti GAMING",
+    "score": 16213,
+    "quantity": 2,
+    "price": 1570,
+    "progress": 58000
+  },
+  {
+    "name": "MSI GeForce GTX 1080 Ti GAMING 11G",
+    "score": 16495,
+    "quantity": 2,
+    "price": 1610,
+    "progress": 59464
+  },
+  {
+    "name": "MSI GeForce GTX 1080 Ti GAMING X 11G",
+    "score": 17041,
+    "quantity": 2,
+    "price": 1660,
+    "progress": 60979
+  },
+  {
+    "name": "EVGA GeForce GTX 1080 Ti K|NGP|N GAMING",
+    "score": 17032,
+    "quantity": 2,
+    "price": 1750,
+    "progress": 61989
+  },
+  {
     "name": "GIGABYTE AORUS GeForce GTX 1080 Ti 11G",
     "score": 17127,
     "quantity": 2,
@@ -1247,16 +1254,9 @@
   },
   {
     "name": "GIGABYTE AORUS GeForce GTX 1080 Ti Xtreme Edition 11G",
-    "score": 9110,
-    "quantity": 1,
-    "price": 910,
+    "score": 17777,
+    "quantity": 2,
+    "price": 1820,
     "progress": 69464
-  },
-  {
-    "name": "MSI Radeon R9 390 GAMING 8G",
-    "score": 4041,
-    "quantity": 1,
-    "price": 350,
-    "progress": 10979
   }
 ]

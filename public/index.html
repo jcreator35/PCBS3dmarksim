@@ -1,5 +1,5 @@
-<script src="http://localhost:8080/jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" href="http://localhost:8080/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
     select {
         display: block;
@@ -11,6 +11,7 @@
         <div class="col-lg-7 col-10">
             <p>Source code: <a href="https://gitlab.com/andzav/PCBS3dmarksim">GitLab</a></p>
             <p>This is third-party app created for game: <a href="http://store.steampowered.com/app/621060/PC_Building_Simulator/">PC Building Simulator</a></p>
+			<h3 class="text-danger">!!!Bluescreen = Need more fans!!!</h3>
         </div>
     </div>
     <div class="row justify-content-md-center">
@@ -44,7 +45,7 @@
 
 </body>
 <script>
-    let apiURL = "http://localhost:8080/";
+    let apiURL = "https://pcbs.herokuapp.com/";
 
     let cpuGet = $.get(apiURL + "getCPUList");
     let gpuGet = $.get(apiURL + "getGPUList");
